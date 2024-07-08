@@ -1,11 +1,11 @@
 import { orchidORM } from 'orchid-orm';
 import { config } from './config';
-import { TestTable } from './tables/test.table';
-import { RelationTable } from './tables/relation.table';
-import { AnotherRelationTable } from './tables/another-relation.table';
+import { OneTable } from './tables/one.table';
+import { ThreeTable } from './tables/three.table';
+import { TwoTable } from './tables/two.table.ts';
 
 export const db = orchidORM(config.database, {
-  test: TestTable,
-  relation: RelationTable,
-  anotherRelation: AnotherRelationTable,
+  one: OneTable,
+  two: TwoTable,
+  three: ThreeTable,
 });

@@ -1,7 +1,7 @@
 import { BaseTable } from '../baseTable';
 
-export class AnotherRelationTable extends BaseTable {
-  readonly table = 'another-relation';
+export class ThreeTable extends BaseTable {
+  readonly table = 'three';
 
   columns = this.setColumns((t) => ({
     id: t.identity().primaryKey(),
