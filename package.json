@@ -1,0 +1,20 @@
+{
+  "name": "orchid-select",
+  "type": "module",
+  "scripts": {
+    "db": "NODE_ENV=development tsx src/db/dbScript.ts",
+    "build:migrations": "rimraf dist/db && node esbuild.migrations.mjs",
+    "db:compiled": "NODE_ENV=production node dist/db/dbScript.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "orchid-orm": "^1.32.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "tsx": "4.9.0",
+    "esbuild": "^0.23.0",
+    "rimraf": "^5.0.8"
+  }
+}
